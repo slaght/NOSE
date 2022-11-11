@@ -8,26 +8,14 @@
 		<title>NOSE</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://stylesheets/min/normalize.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 		<link rel="stylesheet" href="https://bootswatch.com/3/slate/bootstrap.min.css">
 		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="engine.js"></script>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<script>
-			$( document ).ready(function() {
-				console.log('Document ready.');
-				initializePage();
-			});
-
-			function initializePage() {
-				console.log('Initializing bootstrap.');
-				$(function () {
-					$('[data-toggle="popover"]').popover();
-				});
-			}
-		</script>
 	</head>
 	<body>
 		<header>
@@ -63,35 +51,83 @@
 							</span>
 						</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="textField1" placeholder="Field 1">
+							<input type="text" class="form-control input" id="textField1" placeholder="Field 1">
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="textField2" class="col-sm-2">Text Field 2</label>
+						<label for="textField2" class="col-sm-2">
+							Text Field 2
+							<span
+								class="glyphicon glyphicon glyphicon-info-sign"
+								tabindex="0"
+								role="button"
+								data-toggle="popover"
+								data-trigger="hover"
+								data-placement="auto"
+								title="Popover"
+								data-content="Here is a description of this field. We can use HTML here."
+							>
+							</span>
+						</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="textField2" placeholder="Field 2" required="true">
+							<input type="text" class="form-control input" id="textField2" placeholder="Field 2" required="true">
 						</div>
 					</div>
 					<div class="form-group">
 						<div class="checkbox col-sm-12">
 							<label>
-								<input type="checkbox"> Checkbox Field 1
+								<input type="checkbox" class="input" id="checkboxField1"> Checkbox Field 1
 							</label>
+							<span
+								class="glyphicon glyphicon glyphicon-info-sign"
+								tabindex="0"
+								role="button"
+								data-toggle="popover"
+								data-trigger="hover"
+								data-placement="auto"
+								title="Popover"
+								data-content="Here is a description of this field. We can use HTML here."
+							>
+							</span>
 						</div>
 					</div>
 					<div class="form-group">
 						<div class="checkbox col-sm-12">
 							<label>
-								<input type="checkbox" required="true"> Checkbox Field 2
+								<input type="checkbox" required="true" id="checkboxField2"> Checkbox Field 2
 							</label>
+							<span
+								class="glyphicon glyphicon glyphicon-info-sign"
+								tabindex="0"
+								role="button"
+								data-toggle="popover"
+								data-trigger="hover"
+								data-placement="auto"
+								title="Popover"
+								data-content="Here is a description of this field. We can use HTML here."
+							>
+							</span>
 						</div>
 					</div>
 				</div>
 				<div class="col-xs-6">
 					<div class="form-group">
-						<label for="picklistField1" class="col-sm-2">Picklist Field 1</label>
+						<label for="picklistField1" class="col-sm-2">
+							Picklist Field 1
+							<span
+								class="glyphicon glyphicon glyphicon-info-sign"
+								tabindex="0"
+								role="button"
+								data-toggle="popover"
+								data-trigger="hover"
+								data-placement="auto"
+								title="Popover"
+								data-content="Here is a description of this field. We can use HTML here."
+							>
+							</span>
+						</label>
 						<div class="col-sm-10">
-							<select class="form-control" id="picklistField1">
+							<select class="form-control input" id="picklistField1">
 								<option value="1" selected="true">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -100,9 +136,22 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="picklistField2" class="col-sm-2">Picklist Field 2</label>
+						<label for="picklistField2" class="col-sm-2">
+							Picklist Field 2
+							<span
+								class="glyphicon glyphicon glyphicon-info-sign"
+								tabindex="0"
+								role="button"
+								data-toggle="popover"
+								data-trigger="hover"
+								data-placement="auto"
+								title="Popover"
+								data-content="Here is a description of this field. We can use HTML here."
+							>
+							</span>
+						</label>
 						<div class="col-sm-10">
-							<select class="form-control" id="picklistField2" required="true">
+							<select class="form-control input" id="picklistField2" required="true">
 								<option value="1" selected="true">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -111,10 +160,16 @@
 						</div>
 					</div>
 				</div>
+				<hr>
 				<div class="col-xs-12">
-					<hr>
-					<button type="submit" class="btn btn-default">Submit</button>
 					<button type="button" class="btn btn-default">Reset</button>
+				</div>
+				<div class="col-xs-12" id="estimates" style="display: none;">
+					<h2>Estimates:</h2>
+					<!-- bootstrap table here -->
+					<p id="time"></p>
+					<p id="money"></p>
+					<p id="effort"></p>
 				</div>
 			</form>
 		</div>

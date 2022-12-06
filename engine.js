@@ -113,6 +113,13 @@ function validateInputs() {
 
 function showEstimates(effort) {
 	console.log('Showing estimates.');
-	$('#effort').html(effort + ' person-months');
+	$('#effort').html('Project effort: ' + Math.round(effort * 100) / 100 + ' person-months');
+
+	if(inputs['sala']) {
+		$('#money').html('Project cost: ' + (Math.round(effort * 100) / 100) * inputs['sala'] + ' currency units');
+	} else {
+		$('#money').html('');
+	}
+
 	$('#estimates').show();
 }

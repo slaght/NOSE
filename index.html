@@ -66,6 +66,7 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="col-xs-6">
 					<div class="form-group">
 						<label for="type" class="col-sm-4">
@@ -95,6 +96,29 @@
 					</div>
 				</div>
 
+				<div class="col-xs-6">
+					<div class="form-group">
+						<label for="sala" class="col-sm-4">
+							Monthly Salary
+							<span
+								class="glyphicon glyphicon glyphicon-info-sign"
+								tabindex="0"
+								role="button"
+								data-toggle="popover"
+								data-trigger="hover"
+								data-placement="auto"
+								data-container="body"
+								title="Description:"
+								data-content="Average salary for employees on the project, in a currency of your choice."
+							>
+							</span>
+						</label>
+						<div class="col-sm-8">
+							<input type="number" class="form-control input" id="sala" placeholder="Salary" required="true">
+						</div>
+					</div>
+				</div>
+
 				<div class="col-xs-12">
 					<hr/>
 					<h3>Product Factors</h3>
@@ -103,6 +127,7 @@
 							<p>Product factors account for variation in the effort required to develop software caused by characteristics of the product under development. A product that is complex, has high reliability requirements, or works with a large testing database will require more effort to complete. There are five product factors, and complexity has the strongest influence on estimated effort.</p>
 						</div>
 					</div>
+					<br/>
 					<br/>
 				</div>
 
@@ -179,7 +204,7 @@
 								data-placement="auto"
 								data-container="body"
 								title="Description:"
-								data-content="Idk. Use your brain, it's subjective anyway."
+								data-content="General complexity. Just an estimate. Reference the COCOMO II manual for more information."
 							>
 							</span>
 						</label>
@@ -264,6 +289,7 @@
 							<p>The platform refers to the target-machine complex of hardware and infrastructure software (previously called the virtual machine). The factors have been revised to reflect this as described in this section. Some additional platform factors were considered, such as distribution, parallelism, embeddedness, and real-time operations.</p>
 						</div>
 					</div>
+					<br/>
 					<br/>
 				</div>
 
@@ -362,6 +388,7 @@
 							<p>After product size, people factors have the strongest influence in determining the amount of effort required to develop a software product. The Personnel Factors are for rating the development team’s capability and experience – not the individual. These ratings are most likely to change during the course of a project reflecting the gaining of experience or the rotation of people onto and off the project.</p>
 						</div>
 					</div>
+					<br/>
 					<br/>
 				</div>
 
@@ -554,6 +581,7 @@
 						</div>
 					</div>
 					<br/>
+					<br/>
 				</div>
 				
 				<div class="col-xs-6">
@@ -654,6 +682,7 @@
 						<div class="container-fluid animate">
 							<div class="col-xs-6">
 								<p id="effort"></p>
+								<p id="money"></p>
 							</div>
 						</div>
 						<br/>

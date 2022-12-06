@@ -38,6 +38,11 @@
 		</header>
 
 		<div class="container-fluid animate">
+			<div id="alert-container">
+				<div class="alert alert-danger" id="alert">
+				</div>
+			</div>
+
 			<form class="form-horizontal">
 				<div class="col-xs-6">
 					<div class="form-group">
@@ -91,8 +96,14 @@
 				</div>
 
 				<div class="col-xs-12">
+					<hr/>
 					<h3>Product Factors</h3>
-					<p>Product factors account for variation in the effort required to develop software caused by characteristics of the product under development. A product that is complex, has high reliability requirements, or works with a large testing database will require more effort to complete. There are five product factors, and complexity has the strongest influence on estimated effort.</p>
+					<div class="container-fluid animate">
+						<div class="col-xs-6">
+							<p>Product factors account for variation in the effort required to develop software caused by characteristics of the product under development. A product that is complex, has high reliability requirements, or works with a large testing database will require more effort to complete. There are five product factors, and complexity has the strongest influence on estimated effort.</p>
+						</div>
+					</div>
+					<br/>
 				</div>
 
 				<div class="col-xs-6">
@@ -246,8 +257,14 @@
 				</div>
 
 				<div class="col-xs-12">
+					<hr/>
 					<h3>Platform Factors</h3>
-					<p>The platform refers to the target-machine complex of hardware and infrastructure software (previously called the virtual machine). The factors have been revised to reflect this as described in this section. Some additional platform factors were considered, such as distribution, parallelism, embeddedness, and real-time operations.</p>
+					<div class="container-fluid animate">
+						<div class="col-xs-6">
+							<p>The platform refers to the target-machine complex of hardware and infrastructure software (previously called the virtual machine). The factors have been revised to reflect this as described in this section. Some additional platform factors were considered, such as distribution, parallelism, embeddedness, and real-time operations.</p>
+						</div>
+					</div>
+					<br/>
 				</div>
 
 				<div class="col-xs-6">
@@ -338,8 +355,14 @@
 				</div>
 
 				<div class="col-xs-12">
+					<hr/>
 					<h3>Personnel Factors</h3>
-					<p>After product size, people factors have the strongest influence in determining the amount of effort required to develop a software product. The Personnel Factors are for rating the development team’s capability and experience – not the individual. These ratings are most likely to change during the course of a project reflecting the gaining of experience or the rotation of people onto and off the project.</p>
+					<div class="container-fluid animate">
+						<div class="col-xs-6">
+							<p>After product size, people factors have the strongest influence in determining the amount of effort required to develop a software product. The Personnel Factors are for rating the development team’s capability and experience – not the individual. These ratings are most likely to change during the course of a project reflecting the gaining of experience or the rotation of people onto and off the project.</p>
+						</div>
+					</div>
+					<br/>
 				</div>
 
 				<div class="col-xs-6">
@@ -523,8 +546,14 @@
 				</div>
 
 				<div class="col-xs-12">
+					<hr/>
 					<h3>Project Factors</h3>
-					<p>Project factors account for influences on the estimated effort such as use of modern software tools, location of the development team, and compression of the project schedule.</p>
+					<div class="container-fluid animate">
+						<div class="col-xs-6">
+							<p>Project factors account for influences on the estimated effort such as use of modern software tools, location of the development team, and compression of the project schedule.</p>
+						</div>
+					</div>
+					<br/>
 				</div>
 				
 				<div class="col-xs-6">
@@ -618,6 +647,19 @@
 					</div>
 				</div>
 
+				<div id="estimates">
+					<div class="col-xs-12">
+						<hr/>
+						<h3>Estimates</h3>
+						<div class="container-fluid animate">
+							<div class="col-xs-6">
+								<p id="effort"></p>
+							</div>
+						</div>
+						<br/>
+					</div>
+				</div>
+
 			</form>
 		</div>
 
@@ -647,6 +689,7 @@
 								<li>Mahaboob Basha Shaik - 2847513</li>
 							</ul>
 						</p>
+						<p>This page uses descriptions from the COCOMO Model Definition Manual, Version 2.1, from the Center for Software Engineering. Bear in mind that this model is from 2000 and some parts may be drastically out-of-date by now.</p>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
